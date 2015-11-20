@@ -482,7 +482,6 @@ li{
 .hd_center_c{
     width: 950px;
     height: 600px;
-/*   border: 1px solid blue;*/
     margin: 30px auto;
     position: relative;
 
@@ -492,7 +491,6 @@ li{
     position: absolute;
     width: 100px;
     height: 600px;
-   /* border: 1px solid blue;*/
 }
 
 .hd_center_c .left ul{
@@ -526,7 +524,6 @@ li{
     width: 550px;
     height: 600px;
     left:100px;
-  /*  border: 1px solid red;*/
 }
 .hd_center_c .cen h2{
     margin-bottom: 20px;
@@ -537,7 +534,6 @@ li{
     height: 65px;
     float: left;
     margin-bottom: 20px;
-    /*border: 1px solid red;*/
 }
 .hd_center_c .cen li .img{
     display: block;
@@ -549,7 +545,6 @@ li{
     width: 130px;
     margin-bottom: 5px;
     margin-left: 60px;
-    /*border: 1px solid red;*/
 }
 
 .hd_center_c .cen li .biaoqian:hover{
@@ -571,12 +566,10 @@ li{
     width: 300px;
     height: 600px;
     left:650px;
-/*    border: 1px solid olive;*/
 }
 .hd_center_c .right li {
     float: left;
     width:300px ;
-  /*  height: 90px;*/
     margin-top: 10px;
 }
 .hd_center_c .right li p{
@@ -591,7 +584,6 @@ li{
     height: 17px;
     line-height: 17px;
     text-align: center;
-  /*  border: 1px solid red;*/
     margin-right: 12px;
     margin-top: 5px;
     color:#017a85;
@@ -623,7 +615,6 @@ li{
 
 .hd_center_d .left ul{
     height: 300px;
-    /*border: 1px solid blue;*/
 }
 
 .hd_center_d .left ul a{
@@ -631,7 +622,7 @@ li{
 }
 .hd_center_d .left ul h2 a{
     font-size: 24px;
-    color:#017a85;
+    color:#614e3c;
     font-weight: 500;
 }
 
@@ -642,10 +633,12 @@ li{
 
 .hd_center_d .left .dushu{
     margin-top: 15px;
+
 }
 
 .hd_center_d .left .dushu a{
     font-size: 14px;
+    color:#614e3c;
 }
 .hd_center_d .left .ico{
     display: block;
@@ -656,12 +649,15 @@ li{
     background: url("./images/ico.jpg") 0px 0px no-repeat;
 }
 
+.hd_center_d .left .ico_a{
+    color:#614e3c;
+}
+
 .hd_center_d .cen{
     position: absolute;
     width: 520px;
     height: 600px;
     left:100px;
-/*      border: 1px solid red;*/
 }
 .hd_center_d .cen h2{
     margin-bottom: 20px;
@@ -673,7 +669,6 @@ li{
     float: left;
     margin-left: 2px;
     margin-bottom: 20px;
-  /*  border: 1px solid red;*/
 }
 
 .hd_center_d .cen li a,.hd_center_d .cen li span,.hd_center_d .cen li p{
@@ -734,7 +729,6 @@ li{
     height: 17px;
     line-height: 17px;
     text-align: center;
-    /*  border: 1px solid red;*/
     margin-right: 12px;
     margin-top: 5px;
     color:#614e3c;
@@ -751,3 +745,495 @@ li{
     color:#ffffff;
 }
 /*第四部分结束*/
+
+
+
+/*第五部分开始*/
+.hd_center_e{
+    width: 100%;
+    height: 600px;
+    background: #f7f7f7;
+}
+
+.hd_center_ee{
+    width: 950px;
+    height: 600px;
+    margin: 60px auto;
+    position: relative;
+
+}
+
+.hd_center_e .left{
+    position: absolute;
+    width: 100px;
+    height: 600px;
+    margin-top: 40px;
+
+}
+
+.hd_center_e .left ul{
+    height: 600px;
+}
+
+.hd_center_e .left ul a{
+    color:#017a85;
+}
+.hd_center_e .left ul h2 a{
+    font-size: 24px;
+    color:#614e3c;
+    font-weight: 500;
+}
+
+.hd_center_e .left ul a:hover{
+    color:#ffffff;
+
+}
+
+.hd_center_e .left .dushu{
+    margin-top: 15px;
+
+}
+
+.hd_center_e .left .dushu a{
+    font-size: 14px;
+    color:#614e3c;
+}
+.hd_center_e .left .ico{
+     display: block;
+     width: 50px;
+     height: 50px;
+     border-radius:12px;
+     margin: 20px 0px 0px 0px;
+     background: url("./images/ico.jpg") -250px 0px no-repeat;
+ }
+
+.hd_center_e .left .ico_a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius:12px;
+    margin: 20px 0px 0px 0px;
+    background: url("./images/ico.jpg") -50px 0px no-repeat;
+}
+
+.hd_center_e .left .tubiao a{
+    color:#333333;
+}
+
+.hd_center_e .cen{
+    position: absolute;
+    width: 520px;
+    height: 600px;
+    left:100px;
+    margin-top: 40px;
+}
+.hd_center_e .cen h2{
+    margin-bottom: 20px;
+}
+
+.hd_center_e .cen li{
+    width: 126px;
+    height: 145px;
+    float: left;
+    margin-left: 2px;
+    margin-bottom: 20px;
+}
+
+.hd_center_e .cen li a,.hd_center_e .cen li span,.hd_center_e .cen li p{
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    margin-bottom: 2px;
+    color: #555d53;
+}
+.hd_center_e .cen li p{
+    color:#666666;
+}
+.hd_center_e .cen li .img{
+    margin-bottom: 10px;
+    background: #ffffff;
+    height: 85px;
+}
+
+.hd_center_e .cen .gedan img{
+    width: 82px;
+    height: 82px;
+    background: url("images/bofang.png") no-repeat;
+
+}
+.hd_center_e .cen .gedan li{
+   position: relative;
+
+}
+
+.hd_center_e .cen .gedan li i{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top:20px ;
+    left: 40px;
+
+    background: url("images/bofang.png") no-repeat;
+
+}
+
+.hd_center_e .cen .gedan span{
+    font-size: 13px;
+    color:#111111;
+
+}
+
+.hd_center_e .cen li .pianming,.hd_center_e .cen li .anniu{
+    color: #555d53;
+}
+.hd_center_e .cen li .pianming:hover{
+    color: #ffffff;
+}
+
+
+
+.hd_center_e .right{
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    left:650px;
+    margin-top: 40px;
+}
+
+.hd_center_e .right li {
+    counter-increment: listxh;
+    width:300px ;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.hd_center_e .right li a,.hd_center_e .right li span{
+    display: block;
+    font-size: 12px;
+    margin-left: 20px;
+
+}
+.hd_center_e .right li img{
+    float: left;
+    width: 55px;
+    height: 60px;
+}
+
+.hd_center_e .right li .mz{
+    color:#333333;
+    margin-left: 90px;
+    width: 40px;
+    height:15px;
+}
+
+.hd_center_e .right li .mz:hover{
+    color:#ffffff;
+}
+
+
+.hd_center_e .right li span{
+    color:#999999;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+
+/*第五部分结束*/
+
+
+/*第六部分开始*/
+
+
+.hd_center_f{
+    width: 950px;
+    height: 600px;
+    margin: 60px auto;
+    position: relative;
+
+}
+
+.hd_center_f .left{
+    position: absolute;
+    width: 100px;
+    height: 600px;
+    margin-top: 40px;
+
+}
+
+.hd_center_f .left ul{
+    height: 600px;
+}
+
+.hd_center_f .left ul a{
+    color:#017a85;
+}
+.hd_center_f .left ul h2 a{
+    font-size: 24px;
+    color:#007722;
+    font-weight: 700;
+}
+
+.hd_center_f .left ul a:hover{
+    color:#ffffff;
+
+}
+
+.hd_center_f .left .dushu{
+    margin-top: 15px;
+
+}
+
+.hd_center_f .left .dushu a{
+    font-size: 14px;
+    color:#614e3c;
+}
+.hd_center_f .left .ico{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius:12px;
+    margin: 20px 0px 0px 0px;
+    background: url("./images/ico.jpg") -250px 0px no-repeat;
+}
+
+.hd_center_f .left .ico_a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius:12px;
+    margin: 20px 0px 0px 0px;
+    background: url("./images/ico.jpg") -50px 0px no-repeat;
+}
+
+.hd_center_f .left .tubiao a{
+    color:#333333;
+}
+
+.hd_center_f .cen{
+    position: absolute;
+    width: 520px;
+    height: 600px;
+    left:100px;
+    margin-top: 40px;
+}
+
+
+
+.hd_center_f .cen li{
+    float: left;
+    margin-top: 12px;
+    border: 1px solid #ffffff;
+}
+
+.hd_center_f .cen li a{
+display: block;
+}
+
+.hd_center_f .cen .img{
+    width: 260px;
+}
+
+.hd_center_f .cen .img a,.hd_center_f .cen .img span{
+    font-size: 14px;
+    display: block;
+    float: left;
+}
+
+.hd_center_f .cen .img span{
+
+    color:#666666;
+    margin-left:20px;
+
+}
+
+.hd_center_f .cen .img_a {
+    margin-left: 15px;
+    text-align: center;
+   /* height: 136px;*/
+
+}
+
+
+.hd_center_f .right{
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    left:650px;
+    margin-top: 40px;
+}
+
+.hd_center_f .right li {
+    counter-increment: listxh;
+    width:300px ;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.hd_center_f .right li a,.hd_center_f .right li span{
+    display: block;
+    font-size: 12px;
+    margin-left: 20px;
+
+}
+.hd_center_f .right li img{
+    float: left;
+    width: 55px;
+    height: 60px;
+}
+
+.hd_center_f .right li .mz{
+    color:#3377AA;
+    margin-left: 90px;
+  /*  width: 150px;*/
+   /* height:15px;*/
+}
+
+.hd_center_f .right li .mz:hover{
+    color:#ffffff;
+}
+
+
+.hd_center_f .right li span{
+    color:#666666;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+
+/*第六部分结束*/
+
+
+
+/*第七部分开始*/
+.hd_center_g{
+    width: 950px;
+    height: 650px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.hd_center_g .left{
+    position: absolute;
+    width: 100px;
+    height: 600px;
+
+}
+
+.hd_center_g .left ul{
+    height: 300px;
+}
+
+.hd_center_g .left ul a{
+    color:#017a85;
+}
+.hd_center_g .left ul h2 a{
+    font-size: 24px;
+    color:#614e3c;
+    font-weight: 500;
+}
+
+.hd_center_g .left ul a:hover{
+    color:#ffffff;
+
+}
+
+.hd_center_g .left .dushu{
+    margin-top: 15px;
+
+}
+
+.hd_center_g .left .dushu a{
+    font-size: 14px;
+    color:#614e3c;
+}
+.hd_center_g .left .ico{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius:12px;
+    margin: 20px 0px 0px 0px;
+    background: url("./images/ico.jpg") 0px 0px no-repeat;
+}
+
+.hd_center_g .left .ico_a{
+    color:#614e3c;
+}
+
+.hd_center_g .cen{
+    position: absolute;
+    width: 550px;
+    height: 600px;
+    left:100px;
+}
+
+
+
+.hd_center_g .cen li{
+    float: left;
+    margin-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hd_center_g .cen li img{
+      width: 265px;
+      height: 250px;
+  }
+
+.hd_center_g .cen li a,.hd_center_g .cen li span{
+    display: block;
+    width: 265px;
+    color:#614e3c;
+}
+.hd_center_g .cen li span{
+    margin-top: 5px;
+}
+
+.hd_center_g .right{
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    left:650px;
+    margin-left: 30px;
+}
+
+.hd_center_g .right a{
+    color:#614e3c;
+}
+.hd_center_g .right li {
+    float: left;
+    width:300px ;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e8edf1;
+}
+
+.hd_center_g .right li a{
+    display: block;
+    float: left;
+    width: 27px;
+    height: 17px;
+    line-height: 17px;
+    text-align: center;
+    margin-right: 12px;
+    margin-top: 10px;
+    color:#614e3c;
+}
+.hd_center_g .right p{
+    font-size: 14px;
+    color:#666666;
+}
+.hd_center_g .right li p{
+    width: 38px;
+    height: 17px;
+    font-size: 14px;
+    color:#999999;
+}
+
+.hd_center_g .right li a:hover{
+    color:#ffffff;
+}
+
+/*第七部分结束*/
