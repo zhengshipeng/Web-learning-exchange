@@ -1,7 +1,11 @@
+/*
+*（1）学习jQuery,jQuery UI，jQuery form（异步提交插件） ，jQuery validator（表单验证插件）,jQuery cookie等插件时完成的项目
+*（2）由于学习过程编写。时间跨度较长，各函数，变量申明不严谨。敬请见谅。例：注册函数userRegister(),登录函数userLogin()内容过多，因拆分多个函数
+*（3）主文件：index.html，index.js，index.css
+*（4）这个版本的jQuery UI 等插件不支持IE9以下。
+*/
 
 $(function(){
-
-	
 	
 	if($.cookie('user')){
 		showHide();
@@ -90,13 +94,49 @@ $(function(){
 								success:function(response,status){
 									$(".comment_list").eq(index).find(".comment_load").hide();
 									var json1 = eval(response);
+									var count = 0;
 									$.each(json1,function(index2,value){
+										count = value.count;
 										var newDate = new Date();
 										newDate.setTime(value.time * 1000);
 										time = newDate.toLocaleString();
 										$(".comment_list").eq(index).append('<dl class="comment_content"><dt>'+value.user+'</dt><dd>'+value.comment+'</dd><dd>'+time+'</dd></dl>');
 									});
-									
+									$(".comment_list").eq(index).append('<dl><dd><span class="comment_more">加载更多评论</span></dd></dl>');
+									var page = 2;
+									if(page>count){
+										$(".comment_list").eq(index).find('.comment_more').off('click');
+										$(".comment_list").eq(index).find('.comment_more').hide();
+										}
+									$(".comment_list").eq(index).find('.comment_more').button().on('click',function(){
+										$(".comment_list").eq(index).find('.comment_more').button('disable');
+										$.ajax({
+											url:'show_comment.php',
+											type:'POST',
+											data:{
+												titleid:$(comment_this).attr('data-id'),
+												page:page,
+											},
+											beforeSend:function(jqXHR,settings){
+												
+											},
+											success:function(response,status){
+												var json2 = eval(response);
+												$.each(json2,function(index3,value){
+													var newDate = new Date();
+													newDate.setTime(value.time * 1000);
+													time = newDate.toLocaleString();
+													$(".comment_list").eq(index).find(".comment_content").last().after('<dl class="comment_content"><dt>'+value.user+'</dt><dd>'+value.comment+'</dd><dd>'+time+'</dd></dl>');
+												});
+												page++;
+												if(page>count){
+													$(".comment_list").eq(index).find('.comment_more').off('click');
+													$(".comment_list").eq(index).find('.comment_more').hide();
+												}
+												$(".comment_list").eq(index).find('.comment_more').button('enable');
+											},	
+										});
+									});
 									$(".comment_list").eq(index).append('<form><dl class="comment_add"><dt><textarea name="comment"></textarea></dt><dd><input type="hidden" name="titleid" value="'+$(comment_this).attr('data-id')+'"/></dd><dd><input type="hidden" name="user" value="'+$.cookie('user')+'"/></dd><dd><input type="button" value="发表"></dd></dl><form>');
 									$(".comment_list").eq(index).find(".comment_add input[type=button]").button().click(function(){
 										var _this = this;
@@ -111,6 +151,12 @@ $(function(){
 											success:function(responseText,statusText){
 												if(responseText == 2){
 													$("#loading").css('background','url("./img/reg_succ.png") no-repeat 20px center').html('评论成功...');
+													
+													var date = new Date();
+													var times = date.getFullYear()+'/'+(date.getMonth()+1)+'/'+date.getDate();
+													var comment = $(".comment_list").eq(index).find('textarea').val();
+													$(".comment_list").eq(index).prepend('<dl class="comment_content"><dt>'+$.cookie('user')+'</dt><dd>'+comment+'</dd><dd>'+times+'</dd></dl>');
+													
 													$(_this).button('enable');
 													setTimeout(function(){
 														$("#loading").dialog("close");
@@ -298,10 +344,12 @@ $(function(){
 	
 	
 	
+	
 	function hideShow(){
 		$(".users,.loginout").hide();
 		$(".reg_a,.login_a").show();
 	}
+	
 	
 	
 	function showHide(){
@@ -309,7 +357,9 @@ $(function(){
 		$(".reg_a,.login_a").hide();
 	}
 
-	/*登录*/
+	
+	
+	/*登录函数userLogin*/
 	function userLogin(){
 		$('#login').dialog('open').buttonset().validate({
 			submitHandler:function(){
@@ -389,7 +439,8 @@ $(function(){
 		
 	}
 	
-	/*注册*/
+	
+	/*注册函数userRegister*/
 	function userRegister(){
 		$('#reg').dialog('open').buttonset().validate({
 			submitHandler:function(){
