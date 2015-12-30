@@ -1,9 +1,9 @@
 <?php
 
-$dbhost = '******';
-$dbdatabase = '******';
-$username = '******';
-$userpass = '******';
+$dbhost = '123';
+$dbdatabase = '123';
+$username = '123';
+$userpass = '123';
 
 /*$dsn = 'mysql:host='.$dbhost.';dbname='.$dbdatabase.';'
 
