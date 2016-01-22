@@ -13,7 +13,7 @@ base64_encode base64_decode(base64编码后字符串过长，结合压缩函数)
 (var_export函数把变量作为一个字符串输出，eval把字符串当成php代码执行，反序列化得到最初变量的内容)
 
 <4>wddx_serialize_value,wddx_deserialize
-(序列化数组，并以XML字符串格式形式输出)。
+(序列化数组，并以XML字符串格式形式输出
 
 
 
